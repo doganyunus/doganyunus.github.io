@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yunus Dogan</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Georgia, 'Times New Roman', serif;
+      color: #222;
+      background: #fff;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    a {
+      color: #555;
+      text-decoration: none;
+      border-bottom: 1px solid #bbb;
+      transition: color 0.2s, border-color 0.2s;
+    }
+    a:hover { color: #000; border-color: #000; }
+
+    /* ── Layout ── */
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 60px 24px 80px;
+    }
+
+    /* ── Header ── */
+    header {
+      display: flex;
+      align-items: flex-start;
+      gap: 36px;
+      margin-bottom: 48px;
+    }
+
+    header img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      object-fit: cover;
+      flex-shrink: 0;
+      filter: grayscale(15%);
+    }
+
+    header .info h1 {
+      font-size: 1.9rem;
+      font-weight: normal;
+      letter-spacing: 0.01em;
+      margin-bottom: 4px;
+    }
+
+    header .info .title {
+      color: #555;
+      font-style: italic;
+      margin-bottom: 6px;
+    }
+
+    header .info .contact {
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    header .info .contact a { color: #666; border-color: #ccc; }
+    header .info .contact a:hover { color: #222; }
+
+    /* ── Navigation ── */
+    nav {
+      border-top: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+      padding: 10px 0;
+      margin-bottom: 48px;
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      font-size: 0.88rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      border-bottom: none;
+      color: #666;
+    }
+    nav a:hover { color: #000; }
+
+    /* ── Sections ── */
+    section { margin-bottom: 44px; }
+
+    section h2 {
+      font-size: 0.78rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #999;
+      border-bottom: 1px solid #e8e8e8;
+      padding-bottom: 6px;
+      margin-bottom: 18px;
+    }
+
+    section p { margin-bottom: 10px; }
+
+    /* ── Publication / Entry lists ── */
+    .entry-list { list-style: none; }
+    .entry-list li { margin-bottom: 14px; padding-left: 0; }
+
+    .entry-row {
+      display: flex;
+      gap: 16px;
+    }
+
+    .entry-year {
+      flex-shrink: 0;
+      width: 56px;
+      color: #999;
+      font-size: 0.88rem;
+      padding-top: 1px;
+    }
+
+    .entry-body { flex: 1; }
+    .entry-body .venue { color: #666; font-style: italic; font-size: 0.93rem; }
+
+    /* ── Language table ── */
+    .lang-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 6px 24px;
+    }
+
+    .lang-item { font-size: 0.93rem; }
+    .lang-item span { color: #999; font-size: 0.82rem; }
+
+    /* ── Footer ── */
+    footer {
+      border-top: 1px solid #e8e8e8;
+      padding-top: 20px;
+      font-size: 0.83rem;
+      color: #aaa;
+      text-align: center;
+    }
+
+    @media (max-width: 540px) {
+      header { flex-direction: column; align-items: center; text-align: center; }
+      header img { width: 110px; height: 110px; }
+      .entry-year { width: 44px; }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <!-- ── Header ── -->
+  <header>
+    <img src="docs/Dogan-Yunus-2021.x9bebc874.jpg" alt="Yunus Dogan" />
+    <div class="info">
+      <h1>Yunus Dogan</h1>
+      <p class="title">PhD Researcher in History &amp; Civilization</p>
+      <p class="contact">
+        European University Institute, Florence, Italy<br />
+        <a href="mailto:yunus.dogan@eui.eu">yunus.dogan@eui.eu</a>
+        &ensp;·&ensp;
+        <a href="docs/cv_updated.pdf" target="_blank">Curriculum Vitae</a>
+      </p>
+    </div>
+  </header>
+
+  <!-- ── Nav ── -->
+  <nav>
+    <a href="#research">Research</a>
+    <a href="#publications">Publications</a>
+    <a href="#talks">Talks</a>
+    <a href="#grants">Grants</a>
+    <a href="#teaching">Teaching</a>
+    <a href="#education">Education</a>
+  </nav>
+
+  <!-- ── Research ── -->
+  <section id="research">
+    <h2>Research</h2>
+    <p>
+      I am a PhD researcher in the Department of History and Civilization at the
+      European University Institute (Florence), where I am completing my dissertation
+      under the supervision of Prof. Giancarlo Casale and Prof. M'hamed Oualdi
+      (prospective defence: June 2026).
+    </p>
+    <p>
+      My work focuses on the Moriscos—Muslims expelled from early modern Spain—and
+      their integration into the Ottoman world. I examine how these refugees navigated
+      imperial structures, participated in diplomacy, and shaped their identities across
+      the early modern Mediterranean (c. 1550–1620). My research draws on archival
+      sources in Ottoman Turkish, Spanish, Italian, and Latin held in Istanbul, Venice,
+      Madrid, Mantua, and Dubrovnik, among others.
+    </p>
+    <p>
+      I am also interested in digital methods for historical research, including
+      historical network analysis, handwritten text recognition, and geospatial analysis.
+    </p>
+  </section>
+
+  <!-- ── Publications ── -->
+  <section id="publications">
+    <h2>Publications</h2>
+    <p style="color:#999; font-size:0.9rem; margin-bottom:12px;">Under review</p>
+    <ul class="entry-list">
+      <li>
+        <div class="entry-body">
+          Dogan, Y. "The Morisco Presence in the Ottoman Balkans and Aegean: Migration,
+          Settlement, and Integration in the Early Modern Mediterranean."
+          <span class="venue">Submitted to <em>The Journal of Ottoman Studies</em>.</span>
+        </div>
+      </li>
+      <li>
+        <div class="entry-body">
+          Dogan, Y. "The Sultan's Messenger: Morisco Diplomacy between Venice and Istanbul."
+          <span class="venue">Submitted for publication in the proceedings of <em>Early Modern Diplomacy
+          across the Religious Divide</em>, Dubrovnik, 16–17 May 2025.</span>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ── Talks ── -->
+  <section id="talks">
+    <h2>Invited Lectures &amp; Conference Presentations</h2>
+    <ul class="entry-list">
+
+      <li>
+        <div class="entry-row">
+          <div class="entry-year">2026</div>
+          <div class="entry-body">
+            "Between Cross and Crescent: Moriscos as Trans-Imperial Agents in the Ottoman
+            Mediterranean (1550–1620)."
+            <span class="venue">Annual Lecture Series, Estudios sobre Europa, Pablo de Olavide (UPO),
+            Seville — March 26, 2026.</span>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="entry-row">
+          <div class="entry-year">2026</div>
+          <div class="entry-body">
+            "Shaping Diaspora: Morisco Mobility and Ottoman Governance Between the Adriatic and
+            the Aegean."
+            <span class="venue">VII CHAM International Conference, NOVA University Lisbon —
+            April 15, 2026.</span>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="entry-row">
+          <div class="entry-year">2025</div>
+          <div class="entry-body">
+            "Becoming Ottoman? Moriscos and the Question of Subjecthood in the Early Modern Empire."
+            <span class="venue">Being an 'Ottoman' in and outside the Well-Protected Domains,
+            Sabancı University, Istanbul — November 7, 2025.</span>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="entry-row">
+          <div class="entry-year">2025</div>
+          <div class="entry-body">
+            "Crossing the Religious Divide: Ottoman Advocacy and Venetian Suspicion in Early
+            Modern Morisco Diplomacy."
+            <span class="venue">Early Modern Diplomacy across the Religious Divide, ERC SMALLST
+            Project, Dubrovnik — May 16–17, 2025.</span>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="entry-row">
+          <div class="entry-year">2024</div>
+          <div class="entry-body">
+            "Agents of Empire: Moriscos in the Diplomacy and Religious Politics of the Ottoman
+            Mediterranean (1568–1614)."
+            <span class="venue">Seminarios DIPLOINMED, Instituto de Historia (CCHS–CSIC),
+            Madrid — November 5, 2024.</span>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="entry-row">
+          <div class="entry-year">2024</div>
+          <div class="entry-body">
+            "Between Two Worlds: Morisco Identity Formation and Ottoman Affiliations in the
+            Early Modern Mediterranean (1550–1620)."
+            <span class="venue">Cambridge Workshop for the Early Modern Period,
+            Cambridge — December 9, 2024.</span>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="entry-row">
+          <div class="entry-year">2024</div>
+          <div class="entry-body">
+            "A Tale of Two Faiths: When Local Christians Encounter New Christians."
+            <span class="venue">REFORC Conference on Early Modern Christianity,
+            Palermo — May 14–16, 2024.</span>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="entry-row">
+          <div class="entry-year">2022</div>
+          <div class="entry-body">
+            "Moriscos in Ottoman Mediterranean Diplomacy."
+            <span class="venue">COST-Action CA18129 Training School, Tunis — June 2022.</span>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="entry-row">
+          <div class="entry-year">2021</div>
+          <div class="entry-body">
+            "From Danishmendid Coin to the Catalan Seal: The Material Culture of Saint George."
+            <span class="venue">International Graduate Conference, Central European University,
+            Vienna — May 28–29, 2021.</span>
+          </div>
+        </div>
+      </li>
+
+    </ul>
+  </section>
+
+  <!-- ── Grants ── -->
+  <section id="grants">
+    <h2>Grants &amp; Fellowships</h2>
+    <ul class="entry-list">
+
+      <li>
+        <div class="entry-row">
+          <div class="entry-year">2026</div>
+          <div class="entry-body">Paul Oskar Kristeller Research Fellowship, The Renaissance Society of America</div>
+        </div>
+      </li>
+
+      <li>
+        <div class="entry-row">
+          <div class="entry-year">2024</div>
+          <div class="entry-body">
+            Archival Mission Grants, European University Institute
+            <span class="venue"> — Mantua (Italy) &amp; Dubrovnik (Croatia)</span>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="entry-row">
+          <div class="entry-year">2024</div>
+          <div class="entry-body">
+            Conference &amp; Workshop Grants, European University Institute
+            <span class="venue"> — REFORC Conference, Palermo; School of Arabic Studies (CSIC), Granada</span>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="entry-row">
+          <div class="entry-year">2024</div>
+          <div class="entry-body">
+            Travel Grant, French Institute for Oriental Archaeology (IFAO)
+            <span class="venue"> — Winter School, Cairo, Egypt</span>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="entry-row">
+          <div class="entry-year">2023</div>
+          <div class="entry-body">
+            Archival Mission Grants, European University Institute
+            <span class="venue"> — Venice (Italy) &amp; Madrid (Spain)</span>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="entry-row">
+          <div class="entry-year">2022</div>
+          <div class="entry-body">
+            Archival Mission Grants, European University Institute
+            <span class="venue"> — Istanbul (Turkey) &amp; Valladolid (Spain)</span>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="entry-row">
+          <div class="entry-year">2022</div>
+          <div class="entry-body">
+            Travel Grant, European COST Action
+            <span class="venue"> — Training School, Tunis, Tunisia</span>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="entry-row">
+          <div class="entry-year">2021–25</div>
+          <div class="entry-body">
+            Ph.D. Research Grant, Italian Ministry of Foreign Affairs
+            <span class="venue"> — four years, fully funded</span>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="entry-row">
+          <div class="entry-year">2016–19</div>
+          <div class="entry-body">
+            MA Grant, Bilkent University
+            <span class="venue"> — three years, fully funded</span>
+          </div>
+        </div>
+      </li>
+
+    </ul>
+  </section>
+
+  <!-- ── Teaching ── -->
+  <section id="teaching">
+    <h2>Teaching</h2>
+    <ul class="entry-list">
+
+      <li>
+        <div class="entry-row">
+          <div class="entry-year">2024</div>
+          <div class="entry-body">
+            Teaching Assistant, <em>Storia Globale dell'Età Moderna</em> (Master course, Prof. Giovanni Tarantino)
+            <span class="venue"> — University of Florence</span>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="entry-row">
+          <div class="entry-year">2024</div>
+          <div class="entry-body">
+            Teacher Training Certificate: Introduction to Teaching and Learning in Higher Education
+            <span class="venue"> — European University Institute</span>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="entry-row">
+          <div class="entry-year">2020–21</div>
+          <div class="entry-body">
+            Teaching Assistant, <em>Byzantine History I</em> (HIST 413, Prof. Luca Zavagno)
+            <span class="venue"> — Bilkent University, Ankara</span>
+          </div>
+        </div>
+      </li>
+
+    </ul>
+  </section>
+
+  <!-- ── Education ── -->
+  <section id="education">
+    <h2>Education</h2>
+    <ul class="entry-list">
+
+      <li>
+        <div class="entry-row">
+          <div class="entry-year">2021–</div>
+          <div class="entry-body">
+            <strong>Ph.D.</strong>, Department of History and Civilization
+            <span class="venue"> — European University Institute, Florence</span><br />
+            Advisors: Prof. Giancarlo Casale &amp; Prof. M'hamed Oualdi · Defence: June 2026
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="entry-row">
+          <div class="entry-year">2021–22</div>
+          <div class="entry-body">
+            <strong>Master of Research</strong>, Department of History and Civilization
+            <span class="venue"> — European University Institute, Florence</span>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="entry-row">
+          <div class="entry-year">Fall 2023</div>
+          <div class="entry-body">
+            Visiting Researcher, Department of Modern and Contemporary History
+            <span class="venue"> — University of Valencia, Spain</span>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="entry-row">
+          <div class="entry-year">2016–19</div>
+          <div class="entry-body">
+            <strong>MA</strong> in European History
+            <span class="venue"> — Bilkent University, Ankara</span>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="entry-row">
+          <div class="entry-year">2010–16</div>
+          <div class="entry-body">
+            <strong>BA</strong> in History
+            <span class="venue"> — Middle East Technical University, Ankara</span>
+          </div>
+        </div>
+      </li>
+
+    </ul>
+  </section>
+
+  <!-- ── Languages ── -->
+  <section id="languages">
+    <h2>Languages</h2>
+    <div class="lang-grid">
+      <div class="lang-item">Turkish <span>(Native, C2)</span></div>
+      <div class="lang-item">Kurdish <span>(Native, C2)</span></div>
+      <div class="lang-item">English <span>(Fluent, C1)</span></div>
+      <div class="lang-item">Spanish <span>(B2–C1)</span></div>
+      <div class="lang-item">Italian <span>(Reading, B1–B2)</span></div>
+      <div class="lang-item">Ottoman Turkish <span>(Reading, B1–B2)</span></div>
+      <div class="lang-item">Arabic <span>(Reading, B1)</span></div>
+      <div class="lang-item">Catalan <span>(Reading, B1)</span></div>
+      <div class="lang-item">Latin <span>(Reading, B1)</span></div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Yunus Dogan &ensp;·&ensp; European University Institute &ensp;·&ensp; Updated March 2026</p>
+  </footer>
+
+</div>
+</body>
+</html>
